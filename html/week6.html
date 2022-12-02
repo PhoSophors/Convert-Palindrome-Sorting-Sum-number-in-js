@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/week6.css">
+  <title>Pho SoPhors task 3</title>
+</head>
+<body>
+  <!-- main content -->
+  <div class="main-content">
+
+    <!-- header -->
+    <div class="header">
+      <h1>ROYAL UNIVERSITY OF PHNOM PENH</h1>
+    </div>
+    <!-- end header -->
+    
+    <!-- class row -->
+    <div class="row">
+
+      <!--=================== task 1 =================== -->
+      <div class="col-1">
+        <div class="task-container">
+          <h1>Number to string converter</h1>
+          <form action="/action_page.php">
+            <input type="text" id="cNumber" name="convertNumber" placeholder="Enter Number">
+            <input type="button" onclick="convertFunction()" value="Convert">
+            <div class="result-container" id="convertResult">
+              <!-- Output result -->
+            </div>
+          </form>
+          <!-- <script src="/js/convertNum2String.js"></script> -->
+        </div>
+      </div>
+      <!--=================== end task 1 ===================-->
+    
+      <!--=================== task 2 ===================-->
+      <div class="col-2">
+        <div class="task-container">
+          <h1>Palindrome number</h1>
+          <form action="/action_page.php">
+            <input type="text" id="pNumber" name="palindromeNumber" placeholder="Enter Number">
+            <input type="button" onclick="palindromeFunction()" value="Check">
+            <div class="result-container" id="palindromeResult">
+              <!-- Output result -->
+            </div>
+          </form>
+          <!-- <script src="/js/palindromeNumber.js"></script> -->
+        </div>
+      </div>
+      <!--=================== end task 2 ===================-->
+
+      <!--=================== task 3 ===================-->
+      <div class="col-3">
+        <div class="task-container">
+          <h1>Sort Number</h1>
+          <br><br>
+          <h3>Enter numbers separated by comma [example1], space [example2]</h3>
+          <form action="/action_page.php">
+            <textarea id="sNumber" name="sortNumber" cols="30" rows="10"></textarea><br>
+            <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="small">
+            <label for="vehicle1">Ascending order (from small to large)</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="large">
+            <label for="vehicle2">Descending order (from large to small)</label><br><br> -->
+            <input type="button" onclick="sort()" value="Sort Number"><br><br>
+            <div class="result-container" id="sortResult">
+              <!-- Output result -->
+            </div>
+          </form>
+          <!-- <script src="/js/sortNumber.js"></script> -->
+        </div>
+      </div>
+      <!--=================== end task 3 ===================-->
+
+      <!--=================== task 4 ===================-->
+      <div class="col-4">
+        <div class="task-container">
+          <h1>Sum Number</h2>
+          <br><br>
+          <h3>Enter numbers separated by comma [example1], space [example2]</h3>
+          <form>
+            <textarea name="sortNumber" id="inputSum" cols="30" rows="10"></textarea><br>
+            <input type="button" onclick="sum()" value="Convert"><br><br>
+            <div class="result-container" id="sumResult">
+              <!-- Output result -->
+            </div>
+          </form>
+         <!-- <script src="/js/sumNumber.js"></script> -->
+        </div>
+      </div>
+      <!--=================== end task 4 ===================-->
+      <!-- calling javascrip file from js folder -->
+      <script src="/js/week6.js"></script>
+    </div>
+    <!-- end class row -->
+
+    <!-- footer class -->
+    <div class="footer">
+      
+    </div>
+    <!-- end footer class -->
+
+  </div>
+  <!-- end main-content -->
+</body>
+</html>
